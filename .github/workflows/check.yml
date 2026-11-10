@@ -1,0 +1,12 @@
+name: Acceptance check
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  retry-policy:
+    name: Retry policy
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 check.py
