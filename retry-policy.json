@@ -1,4 +1,4 @@
 {
-  "maxAttempts": 0,
+  "maxAttempts": 5,
   "timeoutSeconds": 60
 }
